@@ -8,7 +8,7 @@ docker info
 
 #docker 远程连接
 #set DOCKER_NETWORK_OPTIONS=" -H tcp://0.0.0.0:1314 -H unix:///var/run/docker.sock "
-sed  -i '/DOCKER_NETWORK_OPTIONS/c DOCKER_NETWORK_OPTIONS= -H tcp://192.168.3.41:1314 -H unix:///var/run/docker.sock '  /etc/sysconfig/docker-network 
+sed  -i '/DOCKER_NETWORK_OPTIONS/c DOCKER_NETWORK_OPTIONS= -H tcp://0.0.0.0:1314 -H unix:///var/run/docker.sock '  /etc/sysconfig/docker-network 
 echo "更改docker network配置文件，配置远程ip与端口"
 cat /etc/sysconfig/docker-network   
 echo "更新docker service文件"
