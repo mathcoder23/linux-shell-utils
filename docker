@@ -1,0 +1,2 @@
+#mysql
+docker run -d -p 3306:3306 -v /home/huaqi/yc/docker/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=qazwsx-huaqi-2017-@huaqiweb.COM mysql
