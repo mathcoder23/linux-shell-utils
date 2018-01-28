@@ -1,6 +1,7 @@
 #!/bin/bash
-#echo "指定生成文件的目录，默认是当前目录下的docker-tls"
+echo "指定生成文件的目录，默认是当前目录"
 dir=./docker-tls
+read dir
 echo "指定域名"
 HOST=api.zhongxin688.com
 read HOST
