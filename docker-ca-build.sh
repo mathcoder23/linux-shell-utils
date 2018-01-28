@@ -1,3 +1,4 @@
+#!/bin/bash
 #echo "指定生成文件的目录，默认是当前目录下的docker-tls"
 dir=./docker-tls
 echo "指定域名"
