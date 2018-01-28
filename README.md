@@ -9,4 +9,4 @@ curl -o remote.sh ${url} ;bash remote.sh;rm -rf remote.sh #这样就能够直接
 ### 生成docker证书
 >curl -o remote.sh https://raw.githubusercontent.com/mathcoder23/linux-shell-utils/master/docker-ca-build.sh;bash remote.sh;rm -rf remote.sh
 ### 配置docker远程授权访问
->curl -o remote.sh  https://raw.githubusercontent.com/mathcoder23/linux-shell-utils/master/docker-ca-config.sh remote.sh;rm -rf remote.sh
+>curl -o remote.sh  https://raw.githubusercontent.com/mathcoder23/linux-shell-utils/master/docker-ca-config.sh ;bash remote.sh;rm -rf remote.sh
