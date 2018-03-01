@@ -33,17 +33,5 @@ function docker_aliyun_speed(){
     sudo systemctl daemon-reload
     sudo systemctl restart docker
 }
-function docker_api(){
-    #docker 远程连接
-    #set DOCKER_NETWORK_OPTIONS=" -H tcp://0.0.0.0:1314 -H unix:///var/run/docker.sock "
-    #sed  -i '/DOCKER_NETWORK_OPTIONS/c DOCKER_NETWORK_OPTIONS= -H tcp://0.0.0.0:1314 -H unix:///var/run/docker.sock '  /etc/sysconfig/docker-network 
-    #echo "更改docker network配置文件，配置远程ip与端口"
-    #cat /etc/sysconfig/docker-network   
-    #echo "更新docker service文件"
-    #systemctl daemon-reload
-    #echo "重启docker"
-    #systemctl restart docker
-    #echo "查看端口信息"
-    netstat -ntpl
-}
+
 docker_compose_install
