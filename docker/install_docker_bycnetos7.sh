@@ -23,11 +23,8 @@ function docker_install(){
 function docker_aliyun_speed(){
     echo "${prefix}配置docker阿里云加速"
     sudo mkdir -p /etc/docker
-#sudo tee /etc/docker/daemon.json <<-'EOF'
-#{
-#  "registry-mirrors": ["https://sbp3d98l.mirror.aliyuncs.com"]
-#}
-#EOF
+   
+
     sudo systemctl daemon-reload
     sudo systemctl restart docker
 }
