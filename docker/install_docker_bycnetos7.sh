@@ -44,6 +44,6 @@ function docker_api(){
     #echo "重启docker"
     #systemctl restart docker
     #echo "查看端口信息"
-    #netstat -ntpl
+    netstat -ntpl
 }
 docker_compose_install
