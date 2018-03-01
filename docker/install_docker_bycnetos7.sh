@@ -27,15 +27,17 @@ function docker_compose_install(){
     echo "${prefix}docker-compose安装完成,如果出现下面compose信息，说明安装成功"
     docker-compose version
 }
-function docker_aliyun_speed(){
+function docker_config(){
     echo "${prefix}配置docker阿里云加速,这将覆盖/etc/docker/daemon.json，原始将会备份/etc/docker/daemon.json.bak"
     sudo mkdir -p /etc/docker
     cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
     sudo echo ${config} >> /etc/docker/daemon.json
-
     sudo systemctl daemon-reload
     sudo systemctl restart docker
+    echo ""${prefix}开机启动docker"
+    systemctl enable docker
+
 }
 docker_install
-docker_aliyun_speed
+docker_config
 docker_compose_install
