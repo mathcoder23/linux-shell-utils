@@ -1,0 +1,13 @@
+[Unit]  
+Description=tomcatapi  
+After=network.target  
+   
+[Service]  
+Type=forking  
+ExecStart=/root/demo/bin/demo start 
+ExecReload=  
+ExecStop=/root/demo/bin/demo stop
+PrivateTmp=true  
+   
+[Install]  
+WantedBy=multi-user.target 
