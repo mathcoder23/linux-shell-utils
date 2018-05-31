@@ -1,5 +1,6 @@
 #!/bin/sh
 #  chkconfig: 2345 90 15
+# /usr/lib/systemd/system
 SHELL_PATH=/home/huaqi/yc/esl/eslmonitor.sh
 SHELL_PID=/home/huaqi/yc/esl/service.pid
 psid=0
